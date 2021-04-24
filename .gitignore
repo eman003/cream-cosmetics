@@ -11,3 +11,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /.idea
+/docker-compose/mysql/data
+cream-cosmetics.iml
+composer.lock
+package-lock.json
