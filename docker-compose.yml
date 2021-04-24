@@ -1,0 +1,51 @@
+version: "3.7"
+services:
+  cream_cosmetics:
+    build:
+      args:
+        user: fulu
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: creamcosmetics
+    container_name: creamcosmetics-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - creamcosmetics
+  db:
+    image: mysql:5.7
+    container_name: creamcosmetics-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: cream_cosmetics
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_USER: fulu
+      MYSQL_PASSWORD: fulu
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker-compose/mysql/data:/var/lib/mysql
+      - ./docker-compose/mysql:/etc/mysql/conf.d
+    ports:
+      - 8889:3306
+    networks:
+      - creamcosmetics
+  nginx:
+    image: nginx:1.17-alpine
+    container_name: creamcosmetics-nginx
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - creamcosmetics
+
+networks:
+  creamcosmetics:
+    driver: bridge
