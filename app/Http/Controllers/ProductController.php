@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Ambassador;
+use App\Models\Product;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
-class AmbassadorController extends Controller
+class ProductController extends Controller
 {
     public function __construct()
     {
@@ -19,30 +20,35 @@ class AmbassadorController extends Controller
 
     public function create()
     {
-        //
+        return Inertia::render('Product/Create');
     }
+
 
     public function store(Request $request)
     {
         //
     }
 
-    public function show(Ambassador $ambassador)
+
+    public function show(Product $product)
     {
         //
     }
 
-    public function edit(Ambassador $ambassador)
+
+    public function edit(Product $product)
     {
         //
     }
 
-    public function update(Request $request, Ambassador $ambassador)
+
+    public function update(Request $request, Product $product)
     {
         //
     }
 
-    public function destroy(Ambassador $ambassador)
+
+    public function destroy(Product $product)
     {
         //
     }

@@ -19,6 +19,7 @@ class CreateAmbassadorsTable extends Migration
             $table->string('image')->nullable();
             $table->integer('status_id')->nullable();
             $table->integer('creator_id')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

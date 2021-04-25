@@ -27,3 +27,7 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard/Dashboard');
 })->name('dashboard');
+
+Route::resource('producttype', 'ProductTypeController');
+Route::resource('product', 'ProductController');
+Route::resource('ambassador', 'AmbassadorController');

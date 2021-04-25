@@ -18,6 +18,7 @@ class CreateAboutUsTable extends Migration
             $table->text('description')->nullable();
             $table->integer('status_id')->nullable();
             $table->integer('creator_id')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

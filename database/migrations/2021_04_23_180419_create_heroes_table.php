@@ -20,6 +20,7 @@ class CreateHeroesTable extends Migration
             $table->integer('status_id')->nullable();
             $table->integer('creator_id')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
