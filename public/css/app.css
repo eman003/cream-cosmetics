@@ -15944,51 +15944,6 @@ select {
   opacity: 1;
 }
 
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.outline-white {
-  outline: 2px dotted white;
-  outline-offset: 2px;
-}
-
-.outline-black {
-  outline: 2px dotted black;
-  outline-offset: 2px;
-}
-
-.focus-within\:outline-none:focus-within {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus-within\:outline-white:focus-within {
-  outline: 2px dotted white;
-  outline-offset: 2px;
-}
-
-.focus-within\:outline-black:focus-within {
-  outline: 2px dotted black;
-  outline-offset: 2px;
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus\:outline-white:focus {
-  outline: 2px dotted white;
-  outline-offset: 2px;
-}
-
-.focus\:outline-black:focus {
-  outline: 2px dotted black;
-  outline-offset: 2px;
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -48574,51 +48529,6 @@ select {
     opacity: 1;
   }
 
-  .sm\:outline-none {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .sm\:outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .sm\:outline-black {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .sm\:focus-within\:outline-none:focus-within {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .sm\:focus-within\:outline-white:focus-within {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .sm\:focus-within\:outline-black:focus-within {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .sm\:focus\:outline-none:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .sm\:focus\:outline-white:focus {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .sm\:focus\:outline-black:focus {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
   .sm\:overflow-auto {
     overflow: auto;
   }
@@ -81032,51 +80942,6 @@ select {
 
   .md\:disabled\:opacity-100:disabled {
     opacity: 1;
-  }
-
-  .md\:outline-none {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .md\:outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .md\:outline-black {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .md\:focus-within\:outline-none:focus-within {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .md\:focus-within\:outline-white:focus-within {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .md\:focus-within\:outline-black:focus-within {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .md\:focus\:outline-none:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .md\:focus\:outline-white:focus {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .md\:focus\:outline-black:focus {
-    outline: 2px dotted black;
-    outline-offset: 2px;
   }
 
   .md\:overflow-auto {
@@ -113494,51 +113359,6 @@ select {
     opacity: 1;
   }
 
-  .lg\:outline-none {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .lg\:outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .lg\:outline-black {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .lg\:focus-within\:outline-none:focus-within {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .lg\:focus-within\:outline-white:focus-within {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .lg\:focus-within\:outline-black:focus-within {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .lg\:focus\:outline-none:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .lg\:focus\:outline-white:focus {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .lg\:focus\:outline-black:focus {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
   .lg\:overflow-auto {
     overflow: auto;
   }
@@ -145954,51 +145774,6 @@ select {
     opacity: 1;
   }
 
-  .xl\:outline-none {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .xl\:outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .xl\:outline-black {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .xl\:focus-within\:outline-none:focus-within {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .xl\:focus-within\:outline-white:focus-within {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .xl\:focus-within\:outline-black:focus-within {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .xl\:focus\:outline-none:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .xl\:focus\:outline-white:focus {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .xl\:focus\:outline-black:focus {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
   .xl\:overflow-auto {
     overflow: auto;
   }
@@ -178412,51 +178187,6 @@ select {
 
   .\32xl\:disabled\:opacity-100:disabled {
     opacity: 1;
-  }
-
-  .\32xl\:outline-none {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:outline-black {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:focus-within\:outline-none:focus-within {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:focus-within\:outline-white:focus-within {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:focus-within\:outline-black:focus-within {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:focus\:outline-none:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:focus\:outline-white:focus {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-
-  .\32xl\:focus\:outline-black:focus {
-    outline: 2px dotted black;
-    outline-offset: 2px;
   }
 
   .\32xl\:overflow-auto {

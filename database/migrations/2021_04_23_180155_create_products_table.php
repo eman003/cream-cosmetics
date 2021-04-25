@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name')->nullable();
             $table->string('image')->nullable();
             $table->string('url')->nullable();
-            $table->integer('make_up_type_id')->nullable();
+            $table->integer('product_type_id')->nullable();
             $table->integer('creator_id')->nullable();
             $table->integer('status_id')->nullable();
             $table->softDeletes();
