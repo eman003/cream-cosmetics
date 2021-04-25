@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMakeUpTypesTable extends Migration
+class CreateProductTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateMakeUpTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('make_up_types', function (Blueprint $table) {
+        Schema::create('product_types', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
             $table->integer('status_id')->nullable();
             $table->integer('creator_id')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateMakeUpTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('make_up_types');
+        Schema::dropIfExists('product_types');
     }
 }

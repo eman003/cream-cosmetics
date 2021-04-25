@@ -223,7 +223,9 @@
 
             <!-- Page Content -->
             <main>
-                <slot></slot>
+                <div class="max-w-7xl mx-auto px-6 py-8">
+                    <slot></slot>
+                </div>
             </main>
         </div>
     </div>
