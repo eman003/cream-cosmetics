@@ -28,8 +28,8 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - ./docker-compose/mysql/data:/var/lib/mysql
       - ./docker-compose/mysql:/etc/mysql/conf.d
+      - ./docker-compose/mysql/data:/var/lib/mysql
     ports:
       - 8889:3306
     networks:
