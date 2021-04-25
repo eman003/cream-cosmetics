@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProductTypeRequest;
 use App\Models\ProductType;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 
 class ProductTypeController extends Controller
@@ -15,7 +16,7 @@ class ProductTypeController extends Controller
 
     public function index()
     {
-        //
+        return \response()->json(ProductType::all());
     }
 
 
@@ -25,9 +26,15 @@ class ProductTypeController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(ProductTypeRequest $request)
     {
+        ProductType::create([
+            'name' => $request->name,
+            'status_id' => $request->status_id,
+            'creator_id' => Auth::id()
+                            ]);
 
+        return redirect()->route('dashboard');
     }
 
 
@@ -39,18 +46,29 @@ class ProductTypeController extends Controller
 
     public function edit(ProductType $producttype)
     {
-        //
+        return Inertia::render('ProductType/Edit', ['producttype' => $producttype]);
     }
 
 
-    public function update(Request $request, ProductType $producttype)
+    public function update(ProductTypeRequest $request, ProductType $producttype)
     {
-        //
+        $producttype->name = $request->name;
+        $producttype->status_id = $request->status_id;
+        $producttype->creator_id = $request->creator_id;
+        $producttype->save();
+
+        return redirect()->route('dashboard');
     }
 
 
     public function destroy(ProductType $producttype)
     {
-        //
+        $producttype = $producttype->load('products');
+
+        //TODO: delete related data
+
+        $producttype->delete();
+
+        return redirect()->route('dashboard');
     }
 }

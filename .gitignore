@@ -15,3 +15,6 @@ yarn-error.log
 cream-cosmetics.iml
 composer.lock
 package-lock.json
+/public/mix-manifest.json
+/public/js/app.js
+/public/css/app.css
