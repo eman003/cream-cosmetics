@@ -63,8 +63,6 @@ class ProductTypeController extends Controller
 
     public function destroy(ProductType $producttype)
     {
-        $producttype = $producttype->load('products');
-
         //TODO: delete related data
 
         $producttype->delete();
