@@ -67,6 +67,6 @@ class ProductTypeController extends Controller
 
         $producttype->delete();
 
-        return redirect()->route('dashboard');
+        return response()->json(['message' => 'Successful']);
     }
 }

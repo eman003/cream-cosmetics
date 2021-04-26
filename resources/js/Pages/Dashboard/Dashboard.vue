@@ -16,7 +16,7 @@
             </div>
 
             <div class="flex flex-col mt-8">
-                <dashboard-body :card="cards[active_index]" :loader="isLoading" />
+                <dashboard-body :card="cards[active_index]" :loader="isLoading" @delete="getProductTypes" />
             </div>
     </app-layout>
 </template>
