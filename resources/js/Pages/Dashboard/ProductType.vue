@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="block p-3 text-lg flex justify-between font-semibold bg-purple-50 text-purple-800 cursor-pointer">
+        <div class="block p-3 text-lg flex outline-none focus:outline-none justify-between font-semibold bg-purple-50 text-purple-800 cursor-pointer">
             <inertia-link :href="url+'/'+productType.id+'/edit'" class="px-8 py-1 bg-green-400 text-white hover:bg-green-500 active:border-green-500 outline-none text-sm uppercase rounded shadow-md" title="Edit">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
@@ -48,8 +48,8 @@
                     <button @click="deleteConfirm.isDeleting = false" class="px-4 md:py-1.5 py-2 bg-white border-2 rounded-lg focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-blue-800 hover:bg-gray-50">
                         Cancel
                     </button>
-                    <button @click="destroy" class="mb-2 md:mb-0 px-4 md:py-1.5 py-2 bg-red-700 text-white rounded-lg focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-red-800 hover:bg-red-800">
-                        Deactivate
+                    <button @click="isDeleting" class="mb-2 md:mb-0 px-4 md:py-1.5 py-2 bg-red-700 text-white rounded-lg focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-red-800 hover:bg-red-800">
+                        Delete
                     </button>
                 </div>
             </div>
@@ -58,18 +58,32 @@
 </template>
 
 <script>
-import { reactive } from 'vue';
+import {reactive, watch} from 'vue';
 import { Inertia } from '@inertiajs/inertia';
 export default {
     name: "ProductType",
-    props: ['url', 'productType'],
-    setup(props){
-        const deleteConfirm = reactive({confirm: false, isDeleting: false})
+    emits: ['delete'],
+    props:{
+        url: String,
+        productType: Object
+    },
+    setup(props, ctx){
+        const deleteConfirm = reactive({confirm: false, isDeleting: false,})
         function destroy() {
-                Inertia.delete('/'+props.url+'/'+ props.productType.id)
+            axios.delete('/'+props.url+'/'+ props.productType.id)
+                .then(res => ctx.emit('delete'))
+                .then(err => console.log(err));
+            //Inertia.delete()
         }
 
         return {deleteConfirm, destroy}
+    },
+    methods:{
+        isDeleting(){
+            this.deleteConfirm.confirm = true;
+            this.deleteConfirm.isDeleting = false;
+            this.destroy()
+        }
     }
 }
 </script>
