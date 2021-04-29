@@ -39,13 +39,11 @@ export default {
         return{
             cards: [
                 {
-                    value: '8,282',
+                    value: 0,
                     name: 'Products Types',
                     color: 'bg-indigo-600',
                     icons:{
-                        categories: '<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20"  fill="white"> \n'+
-                            '<path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/> \n'+
-                            '</svg>'
+                        categories: ['fas', 'project-diagram']
                     },
                     data: []
                 },
@@ -54,9 +52,7 @@ export default {
                     name: 'Products',
                     color: 'bg-red-400',
                     icons:{
-                        categories: '<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="white"> \n'+
-                            '<path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" /> \n'+
-                            '</svg>'
+                        categories: ['fas', 'shopping-basket']
                     },
                     data: []
                 },
@@ -65,9 +61,7 @@ export default {
                     name: 'Ambassadors',
                     color: 'bg-pink-500',
                     icons:{
-                        categories: '<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="white"> \n'+
-                            '<path fill-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" clip-rule="evenodd" /> \n'+
-                            '</svg>'
+                        categories: ['fas', 'bullhorn']
                     },
                     data: []
                 }
@@ -81,6 +75,7 @@ export default {
             axios.get('/producttype')
                 .then(response => {
                     this.cards[0].data = response.data;
+                    this.cards[0].value = response.data.length;
                     this.isLoading = false;
                 })
                 .catch(err => console.log(err))

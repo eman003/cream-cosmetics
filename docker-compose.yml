@@ -43,6 +43,7 @@ services:
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d
+      - ./docker-compose/nginx/custom.ini:/usr/local/etc/php/conf.d/
     networks:
       - creamcosmetics
 

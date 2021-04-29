@@ -8,11 +8,12 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2.5|^8.0",
+        "php": "^7.2.34|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1",
         "inertiajs/inertia-laravel": "^0.3.5",
+        "intervention/image": "^2.5",
         "laravel/framework": "^v8.33.1",
         "laravel/jetstream": "^2.3",
         "laravel/sanctum": "^2.6",
