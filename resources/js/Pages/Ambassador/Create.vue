@@ -1,6 +1,6 @@
 <template>
         <app-layout>
-            <div class="text-center uppercase text-2xl ">add new product</div>
+            <div class="text-center uppercase text-2xl ">add new Ambassador</div>
             <div class="mx-auto max-w-6xl bg-white pt-10 px-12 lg:px-24 mb-24">
                 <form @submit.prevent="submit">
                     <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
@@ -8,28 +8,9 @@
                             <div class="-mx-3 md:flex mb-6">
                                 <div class="md:w-1/2 px-3 mb-6 md:mb-0">
                                     <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="name">
-                                        product name*
+                                        ambassador name*
                                     </label>
                                     <input class="w-full bg-gray-50 text-black border border-gray-200 focus:border focus:border-green-400 rounded py-3 px-4 mb-3" id="name" v-model="form.name" type="text" >
-                                </div>
-                                <div class="md:w-1/2 px-3">
-                                    <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="product-type">
-                                        product type*
-                                    </label>
-                                    <select v-model="form.product_type_id" class="w-full bg-gray-50 text-black border border-gray-200 focus:border focus:border-green-400 rounded py-3 px-4 mb-3" id="product-type">
-                                        <option disabled value="0">Select Product Type</option>
-                                        <option v-for="(type, id) in productTypes" :value="id">{{type}}</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 flex flex-col">
-                            <div class="-mx-3 md:flex mb-6">
-                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                                    <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="url">
-                                        takealot product url*
-                                    </label>
-                                    <input class="w-full bg-gray-50 text-black border border-gray-200 focus:border focus:border-green-400 rounded py-3 px-4 mb-3" id="url" v-model="form.url" type="text" >
                                 </div>
                                 <div class="md:w-1/2 px-3">
                                     <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="status">
@@ -62,7 +43,7 @@
                         <div class="-mx-3 md:flex mt-2">
                             <div class="md:w-full px-3">
                                 <button class="md:w-full bg-green-400 focus:border focus:border-green-400 uppercase hover:bg-green-500 shadow hover:shadow-md text-white font-bold py-2 px-4 rounded">
-                                    Add product
+                                    Add ambassador
                                 </button>
                             </div>
                         </div>
@@ -80,7 +61,6 @@ export default {
     name: "Create",
     components: {AppLayout},
     props: {
-        productTypes: Object,
         errors: Object
     },
     data(){
@@ -98,13 +78,11 @@ export default {
         const form = useForm({
             name: null,
             image: null,
-            url: null,
-            product_type_id: 0,
             status_id: 1
         })
 
         function submit() {
-            form.post('/product')
+            form.post('/ambassador')
         }
 
         return { form, submit }

@@ -6,7 +6,6 @@ use App\Http\Requests\ProductRequest;
 use App\Models\Product;
 use App\Models\ProductType;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
@@ -32,6 +31,9 @@ class ProductController extends Controller
 
     public function store(ProductRequest $request)
     {
+        if (!Storage::exists('public'.DIRECTORY_SEPARATOR.'products')){
+            Storage::makeDirectory('public'.DIRECTORY_SEPARATOR.'products');
+        }
         $file = $request->file('image');
         $image = Image::make($file);
         $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'products'.DIRECTORY_SEPARATOR;
