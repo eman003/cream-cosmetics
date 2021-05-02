@@ -28,7 +28,7 @@ class UpdateProductRequest extends FormRequest
             'product_type_id' => 'required|integer|not_in:0',
             'url' => 'required|url',
             'status_id' => 'required|integer|not_in:0',
-            'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
+            //'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
         ];
     }
 }

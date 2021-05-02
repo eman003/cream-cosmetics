@@ -1,7 +1,5 @@
 FROM php:7.4-fpm
 
-FROM node:latest
-
 # Arguments defined in docker-compose.yml
 ARG user
 ARG uid
@@ -20,7 +18,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath
+RUN docker-php-ext-install pdo_mysql
 
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \

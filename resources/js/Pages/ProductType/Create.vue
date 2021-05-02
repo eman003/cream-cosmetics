@@ -2,9 +2,21 @@
         <app-layout>
             <div class="text-center uppercase text-2xl ">add new product types</div>
             <div class="mx-auto max-w-6xl bg-white pt-10 px-12 lg:px-24 mb-24">
+
             <form @submit.prevent="submit">
                 <div class="bg-white shadow rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-                    <div class="pt-6 mb-4 flex flex-col">
+                    <div v-for="(field, index) in producttype">
+                        <div v-if="alertOpen && errors[index]" class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-pink-500">
+                            <span class="text-xl inline-block mr-5 align-middle">
+                              <i class="fas fa-bell"></i>
+                            </span>
+                            <span class="inline-block align-middle mr-8">{{errors[index]}}</span>
+                            <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none" @click="alertOpen = false">
+                                <span>×</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-4 flex flex-col">
                         <div class="-mx-3 md:flex mb-6">
                             <div class="md:w-1/2 px-3 mb-6 md:mb-0">
                                 <label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="name">
@@ -26,19 +38,13 @@
                     </div>
                     <div class="-mx-3 md:flex mt-2">
                         <div class="md:w-full px-3">
-                            <button class="md:w-full bg-green-400 focus:border focus:border-green-400 uppercase hover:bg-green-500 shadow hover:shadow-md text-white font-bold py-2 px-4 rounded">
+                            <button class="md:w-full bg-green-400 focus:outline-none focus:border-green-400 uppercase hover:bg-green-500 shadow hover:shadow-md text-white font-bold py-2 px-4 rounded">
                                 Add product type
                             </button>
                         </div>
                     </div>
                 </div>
             </form>
-            </div>
-
-            <div class="absolute right-3 top-3">
-                <div v-if="displayErrors" v-for="(error, index) in errors" class="bg-red-200 border-l-4 border-red-500 text-red-500 p-4" role="alert">
-                    <p>{{ error }}</p>
-                </div>
             </div>
         </app-layout>
 </template>
@@ -47,9 +53,10 @@
 
 import AppLayout from "@/Layouts/AppLayout";
 import { Inertia } from "@inertiajs/inertia";
+import ValidationError from "@/Utils/ValidationError";
 export default {
     name: "Create",
-    components: {AppLayout},
+    components: {AppLayout, ValidationError},
     props:{
         errors: Object
     },
@@ -59,13 +66,7 @@ export default {
                 name: '',
                 status_id: 1,
             },
-            displayErrors: false,
-        }
-    },
-    watch: {
-        errors(){
-            this.displayErrors = true;
-            setTimeout(() => this.displayErrors = false, 7000);
+            alertOpen: true
         }
     },
     methods: {

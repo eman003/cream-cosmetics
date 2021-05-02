@@ -9,11 +9,12 @@ import {
     faLock,
     faProjectDiagram,
     faShoppingBasket,
-    faBullhorn
+    faBullhorn,
+    faPlus
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faLock, faProjectDiagram, faShoppingBasket, faBullhorn)
+library.add(faLock, faProjectDiagram, faShoppingBasket, faBullhorn, faPlus)
 
 const el = document.getElementById('app');
 
