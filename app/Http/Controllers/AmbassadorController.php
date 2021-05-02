@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreAmbassadorRequest;
+use App\Http\Requests\UpdateAmbassadorRequest;
 use App\Models\Ambassador;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -29,13 +30,13 @@ class AmbassadorController extends Controller
 
     public function store(StoreAmbassadorRequest $request)
     {
-        if (!Storage::exists('public'.DIRECTORY_SEPARATOR.'ambassador')){
-            Storage::makeDirectory('public'.DIRECTORY_SEPARATOR.'ambassador');
+        if (!Storage::exists('public'.DIRECTORY_SEPARATOR.'ambassadors')){
+            Storage::makeDirectory('public'.DIRECTORY_SEPARATOR.'ambassadors');
         }
 
         $file = $request->file('image');
         $image = Image::make($file);
-        $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'ambassador'.DIRECTORY_SEPARATOR;
+        $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'ambassadors'.DIRECTORY_SEPARATOR;
         $file_name = time().'_'.$file->getClientOriginalName();
         if ($image->height() == $image->width() && $image->height() > 1080) {
             $image->resize(1080, 1080);
@@ -69,15 +70,15 @@ class AmbassadorController extends Controller
 
     public function edit(Ambassador $ambassador)
     {
-        return Inertia::render('Ambassador/Edit', ['form' => $ambassador]);
+        return Inertia::render('Ambassador/Edit', ['ambassador' => $ambassador]);
     }
 
-    public function update(Request $request, Ambassador $ambassador)
+    public function update(UpdateAmbassadorRequest $request, Ambassador $ambassador)
     {
         if ($request->hasFile('image')){
             $file = $request->file('image');
             $image = Image::make($file);
-            $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'products'.DIRECTORY_SEPARATOR;
+            $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'ambassador'.DIRECTORY_SEPARATOR;
             $file_name = time().'_'.$file->getClientOriginalName();
             if ($image->height() == $image->width() && $image->height() > 1080) {
                 $image->resize(1080, 1080);
@@ -92,13 +93,13 @@ class AmbassadorController extends Controller
                 $blur->insert($image, 'center');
                 $blur->save($path.$file_name);
             }
-
-            $ambassador->image = 'products'.DIRECTORY_SEPARATOR.$file_name;
         }
 
-        $ambassador->name = $request->name;
-        $ambassador->status_id = $request->status_id;
-        $ambassador->save();
+        $ambassador->update([
+            'name' => $request->name,
+            'status_id' => $request->status_id,
+            'image' => $request->hasFile('image') ? 'ambassadors'.DIRECTORY_SEPARATOR.$file_name : $ambassador->image
+                            ]);
 
         return Redirect::route('dashboard');
     }

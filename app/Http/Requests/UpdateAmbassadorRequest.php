@@ -26,7 +26,7 @@ class UpdateAmbassadorRequest extends FormRequest
         return [
             'name' => 'required|string',
             'status_id' => 'required|integer',
-            'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
+            //'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
         ];
     }
 }

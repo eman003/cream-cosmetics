@@ -1,9 +1,9 @@
 <template>
     <div class="mb-10 text-gray-800">
         <span class="text-xl">{{card.name}}</span>
-        <inertia-link v-if="card.name === 'Products Types'" href="/producttype/create" class="text-base uppercase text-sm float-right text-gray-50 bg-green-400 hover:bg-green-500 px-8 py-2 rounded drop-shadow">Add New</inertia-link>
-        <inertia-link v-if="card.name === 'Products'" href="/product/create" class="text-base uppercase text-sm float-right text-gray-50 bg-green-400 hover:bg-green-500 px-8 py-2 rounded drop-shadow">Add New</inertia-link>
-        <inertia-link v-if="card.name === 'Ambassadors'" href="/ambassador/create" class="text-base uppercase text-sm float-right text-gray-50 bg-green-400 hover:bg-green-500 px-8 py-2 rounded drop-shadow">Add New</inertia-link>
+        <inertia-link v-if="card.name === 'Products Types'" href="/producttype/create" class="text-base uppercase text-sm float-right text-gray-50 bg-green-400 hover:bg-green-500 px-8 py-2 rounded drop-shadow"><font-awesome-icon :icon="['fas', 'plus']" /> Product Type</inertia-link>
+        <inertia-link v-if="card.name === 'Products'" href="/product/create" class="text-base uppercase text-sm float-right text-gray-50 bg-green-400 hover:bg-green-500 px-8 py-2 rounded drop-shadow"><font-awesome-icon :icon="['fas', 'plus']" /> Products</inertia-link>
+        <inertia-link v-if="card.name === 'Ambassadors'" href="/ambassador/create" class="text-base uppercase text-sm float-right text-gray-50 bg-green-400 hover:bg-green-500 px-8 py-2 rounded drop-shadow"><font-awesome-icon :icon="['fas', 'plus']" /> Ambassador</inertia-link>
     </div>
     <div v-if="loader" class="py-52 w-full grid grid-cols-1 place-items-center">
         <!-- TODO: Add a spinner -->
