@@ -10,11 +10,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Welcome', [
+        return Inertia::render('Home/Index'/*, [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
             'laravelVersion' => Application::VERSION,
             'phpVersion' => PHP_VERSION,
-        ]);
+        ]*/);
     }
 }
