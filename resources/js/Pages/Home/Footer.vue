@@ -6,7 +6,7 @@
             <a href="https://www.twitter.com/CosmeticsCream" target="_blank"><font-awesome-icon class="mx-4 hover:text-gray-700" :icon="['fab', 'twitter']" /></a>
             <a href="https://youtube.com/channel/UCvPvqzI6CTsNG5aUnJMmLRw" target="_blank"><font-awesome-icon class="mx-4 hover:text-gray-700" :icon="['fab', 'youtube']" /></a>
         </div>
-        <div class="text-center text-xl hover:text-gray-700">Cream Cosmetics copyright &copy; {{new Date().getFullYear()}}. All rights reserved</div>
+        <div class="text-center text-base md:text-xl hover:text-gray-700">Cream Cosmetics copyright &copy; {{new Date().getFullYear()}}. All rights reserved</div>
     </div>
 </template>
 

@@ -1,8 +1,11 @@
 <template>
-    <div class="pt-16 container mx-auto">
+    <div class="pt-8 md:pt-16 container mx-auto" id="ambassador">
         <titles>Our Ambassadors</titles>
-        <div class="mt-12 mb-16 grid grid-cols-6 gap-3">
-            <thumbnails description="Ambassador Name" directory="ambassadors" :images="ambassadors"/>
+        <div class="mt-8 mx-3 lg:mt-12 mb-4 sm:mb-8 md:mb-12 lg:mb-16 grid grid-cols-2 md:grid-cols-3  lg:grid-cols-6 gap-3">
+            <div v-for="image in ambassadors" class="relative rounded-lg">
+                <img :src="`/images/ambassadors/${image}.jpg`" alt="">
+                <div class="bg-black bg-opacity-40 text-center text-white absolute left-0 bottom-0 w-full h-7">&nbsp;</div>
+            </div>
         </div>
     </div>
 </template>

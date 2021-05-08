@@ -1,7 +1,6 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
+
 use Inertia\Inertia;
 
 /*
@@ -15,7 +14,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', "HomeController@index");
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard/Dashboard');
