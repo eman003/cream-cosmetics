@@ -16,6 +16,12 @@ module.exports = {
                 tillium : ['Titillium Web', 'sans-serif', ],
             },
         },
+        height: {
+            hero: "14rem",
+            heroSm: "22rem",
+            heroMd: "30rem",
+            heroLg: "42rem"
+        }
     },
 
     variants: {

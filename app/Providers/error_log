@@ -1,0 +1,1095 @@
+[04-May-2021 19:07:39 UTC] PHP Warning:  require(/home/fulucqir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/fulucqir/public_html/index.php on line 24
+[04-May-2021 19:07:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/fulucqir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/fulucqir/public_html/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/fulucqir/public_html/index.php on line 24
+[04-May-2021 19:07:41 UTC] PHP Warning:  require(/home/fulucqir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/fulucqir/public_html/index.php on line 24
+[04-May-2021 19:07:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/fulucqir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/fulucqir/public_html/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/fulucqir/public_html/index.php on line 24
+[04-May-2021 19:30:09 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:30:09 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:30:24 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:49:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:49:07 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:49:09 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:49:10 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:49:10 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 19:49:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 22:02:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 22:02:56 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 22:02:57 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[04-May-2021 22:02:59 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 06:37:09 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 06:37:09 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 06:48:47 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 06:50:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 06:52:24 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 06:52:24 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 11:02:22 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 16:28:40 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 16:28:40 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 16:31:08 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 16:37:19 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 17:02:43 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 17:08:31 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 17:14:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 17:29:43 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 17:50:43 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 17:51:52 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+[05-May-2021 18:00:41 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "config" does not exist in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#9 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#10 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#12 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#13 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make('config')
+#5 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(457): Illuminate\Container\Container->offsetGet('config')
+#6 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\Log\LogManager->getDefaultDriver()
+#7 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\Log\LogManager->driver()
+#8 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(250): Illuminate\Log\LogManager->error('Class "Dotenv\\D...', Array)
+#9 /home/fulucqir/creamcosmetics/app/Exceptions/Handler.php(39): Illuminate\Foundation\Exceptions\Handler->report(Object(Error))
+#10 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(404): App\Exceptions\Handler->report(Object(Error))
+#11 /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\Foundation\Http\Kernel->reportException(Object(Error))
+#12 /home/fulucqir/public_html/index.php(55): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#13 {main}
+  thrown in /home/fulucqir/creamcosmetics/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835

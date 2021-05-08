@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-gray-100 pt-16 pb-8">
+    <div class="bg-gray-100 pt-8 lg:pt-16 pb-8" id="contact">
         <titles>Contact Us</titles>
-        <div class="w-1/2 mx-auto mt-12 mb-12">
+        <div class="w-full lg:w-1/2 px-3 mx-auto mt-6 lg:mt-12 mb-8 lg:mb-12">
             <div class="flex flex-row space-x-4">
                 <div class="relative z-0 w-full mb-5">
                     <input
@@ -9,7 +9,7 @@
                         id="name"
                         v-model="form.first_name"
                         placeholder=" "
-                        class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
+                        class="pt-1 md:pt-3 pb-1 md:pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
                     />
                     <label for="name" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Fist Name</label>
                 </div>
@@ -19,7 +19,7 @@
                         id="lname"
                         v-model="form.last_name"
                         placeholder=" "
-                        class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
+                        class="pt-1 md:pt-3 pb-1 md:pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
                     />
                     <label for="lname" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Last Name</label>
                     <span class="text-sm text-red-600 hidden" id="error">Time is required</span>
@@ -32,7 +32,7 @@
                         id="subject"
                         v-model="form.subject"
                         placeholder=" "
-                        class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
+                        class="pt-1 md:pt-3 pb-1 md:pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
                     />
                     <label for="subject" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Subject</label>
                 </div>
@@ -42,7 +42,7 @@
                         id="email"
                         v-model="form.email"
                         placeholder=" "
-                        class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
+                        class="pt-1 md:pt-3 pb-1 md:pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500"
                     />
                     <label for="email" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Email</label>
                 </div>
@@ -52,7 +52,7 @@
                     name=""
                     id="message"
                     cols="4"
-                    class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500">
+                    class="pt-1 md:pt-3 pb-1 md:pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-gray-700 border-gray-500">
                     {{form.message}}
                 </textarea>
                 <label for="message" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Message</label>
@@ -60,7 +60,7 @@
             <button
                 id="button"
                 type="button"
-                class="w-full px-6 py-3 mt-3 text-lg text-white transition-all duration-150 ease-linear shadow outline-none bg-gray-500 hover:bg-gray-600 hover:shadow-lg focus:outline-none"
+                class="w-full px-6 py-3 mt-2 md:mt-3 text-base md:text-lg text-white transition-all duration-150 ease-linear shadow outline-none bg-gray-500 hover:bg-gray-600 hover:shadow-lg focus:outline-none"
             >
                <font-awesome-icon :icon="['fas', 'paper-plane']"/> Message Us
             </button>
