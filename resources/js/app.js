@@ -13,13 +13,19 @@ import {
     faBullhorn,
     faPlus,
     faShoppingCart,
-    faPaperPlane
+    faPaperPlane,
+    faChevronLeft,
+    faChevronRight,
+    faTimes,
+    faEye,
+    faCaretRight
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(
     faLock, faProjectDiagram, faShoppingBasket, faBullhorn, faPlus, faShoppingCart, faPaperPlane,
-    faWhatsapp, faInstagram, faYoutube, faTwitter
+    faWhatsapp, faInstagram, faYoutube, faTwitter, faChevronLeft, faChevronRight, faTimes, faEye,
+    faCaretRight,
 )
 
 const el = document.getElementById('app');

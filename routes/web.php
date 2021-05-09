@@ -15,6 +15,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', "HomeController@index");
+Route::post('contact-us', 'HomeController@sendMessage');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard/Dashboard');
