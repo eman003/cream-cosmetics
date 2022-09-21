@@ -36,6 +36,10 @@ class ProductController extends Controller
             Storage::makeDirectory('public'.DIRECTORY_SEPARATOR.'products');
         }
         $file = $request->file('image');
+        
+        /*
+         * TODO: move this to a trait
+         */
         $image = Image::make($file);
         $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'products'.DIRECTORY_SEPARATOR;
         $file_name = time().'_'.$file->getClientOriginalName();
@@ -88,6 +92,9 @@ class ProductController extends Controller
     {
         if ($request->hasFile('image')){
             $file = $request->file('image');
+            /*
+             * TODO: move this to a trait
+             */
             $image = Image::make($file);
             $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'products'.DIRECTORY_SEPARATOR;
             $file_name = time().'_'.$file->getClientOriginalName();
