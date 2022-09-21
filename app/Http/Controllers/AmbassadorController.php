@@ -35,6 +35,9 @@ class AmbassadorController extends Controller
         }
 
         $file = $request->file('image');
+        /*
+         * TODO: move this to a trait
+         */
         $image = Image::make($file);
         $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'ambassadors'.DIRECTORY_SEPARATOR;
         $file_name = time().'_'.$file->getClientOriginalName();
@@ -77,6 +80,9 @@ class AmbassadorController extends Controller
     {
         if ($request->hasFile('image')){
             $file = $request->file('image');
+            /*
+             * TODO: move this to a trait
+             */
             $image = Image::make($file);
             $path = storage_path().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'ambassador'.DIRECTORY_SEPARATOR;
             $file_name = time().'_'.$file->getClientOriginalName();
